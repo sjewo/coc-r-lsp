@@ -89,8 +89,10 @@ export async function activate(context: ExtensionContext): Promise<void> {
     documentSelector: [
       { scheme: 'file', language: 'r' },
       { scheme: 'file', language: 'rmd' },
+      { scheme: 'file', language: 'rnoweb' },
       { scheme: 'untitled', language: 'r' },
-      { scheme: 'untitled', language: 'rmd' }
+      { scheme: 'untitled', language: 'rmd' },
+      { scheme: 'untitled', language: 'rnoweb' }
     ],
     synchronize: {
       // Synchronize the setting section 'r' to the server
